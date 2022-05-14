@@ -13,8 +13,6 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Josefin+Sans:wght@300;700&family=Open+Sans:wght@400;500;700;800&family=Work+Sans:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
-    <!-- Link For Javascript File -->
-    <script src="myFunctions.js"></script>
     <!-- Link For Icon -->
     <link rel="shortcut icon" href="/imgs/bqby-02.svg" type="image/x-icon">
     <title>تقديم طلب القرض</title>
@@ -37,6 +35,77 @@
             </nav>
         </div>
     </div>
+    <div class="form">
+        <div class="container">
+            <form action="">
+                <h2>أدخل معلوماتك لإكمال تقديم الطلب:</h2>
+                <div class="name">
+                    <label>الأسم الكامل لمقدم الطلب</label>
+                    <input type="text" name="fName" id="fName">
+                    <!-- <span></span> -->
+                </div>
+                <div class="name">
+                    <label>الرقم الوطني</label>
+                    <input type="text" name="idNum" id="idNum" class="dirRight">
+                    <!-- <span></span> -->
+                </div>
+                <div class="name">
+                    <label>تاريخ الولادة</label>
+                    <input type="date" name="birth" id="birth">
+                </div>
+                <div class="name">
+                    <label>رقم الهاتف المحمول</label>
+                    <input type="tel" name="tele" id="tele" class="dirRight" value="+963 9" maxlength="14">
+                    <!-- <span></span> -->
+                </div>
+                <div class="name">
+                    <label>البريد الإلكتروني</label>
+                    <input type="email" name="fMail" id="fMail">
+                    <!-- <span></span> -->
+                </div>
+                <div class="name">
+                    <label>قيمة القرض المطلوبة</label>
+                    <input type="number" name="loanValue" id="loanValue" max="10000000" min="1000000">
+                </div>
+                <div class="loanType select">
+                    <label>نوع القرض المطلوب</label>
+                    <select name="" id="">
+                        <option value="">حساب التوفير</option>
+                        <option value="">القرض التعليمي</option>
+                        <option value="">القرض السكني</option>
+                        <option value="">القرض التجاري</option>
+                        <option value="">القرض الزراعي</option>
+                        <option value="">قرض النقل</option>
+                        <option value="">قرض الورشات</option>
+                    </select>
+                </div>
+                <div class="numYears select">
+                    <label>عدد سنوات القرض</label>
+                    <select name="numYears" id="numYears">
+                        <option value="fy3">3 سنوات</option>
+                        <option value="fy5">5 سنوات</option>
+                        <option value="fy10">10 سنوات</option>
+                        <option value="fy15">15 سنوات</option>
+                        <option value="fy20">20 سنوات</option>
+                    </select>
+                </div>
+                <div class="payment select">
+                    <label>طريقة تسديد الدفعات</label>
+                    <select name="payment" id="payment">
+                        <option value="month">شهرية</option>
+                        <option value="quarter">ربعية</option>
+                        <option value="annual">سنوية</option>
+                    </select>
+                </div>
+                <input type="submit" value="تقديم الطلب">
+            </form>
+            <div class="image">
+                <img src="/imgs/applay.svg" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- Link For Javascript File -->
+    <script src="myFunctions.js"></script>
 </body>
 
 </html>

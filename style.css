@@ -57,6 +57,7 @@ body {
     box-shadow: 0 0 10px #ddd;
     position: sticky;
     top: 0;
+    z-index: 5;
 }
 
 .header nav {
@@ -150,3 +151,105 @@ body {
 }
 
 /* End Landing */
+
+/* Start Req Load */
+
+.form {
+    padding: 40px 0px;
+}
+
+.form .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.form h2 {
+    margin-bottom: 40px;
+}
+
+.form form {
+    display: flex;
+    flex-direction: column;
+    column-gap: 80px;
+    row-gap: 40px;
+    justify-content: center;
+    flex-basis: 40%;
+    margin-right: 50px;
+}
+
+.form form div {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.form form label {
+    font-size: 18px;
+}
+
+.form form input,
+.form form select {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background-color: #eee;
+    padding: 13px 20px;
+    border-bottom: solid 3px #777;
+    font-family: 'Cairo', sans-serif;
+    margin-top: 15px;
+    border-radius: 6px;
+    transition: .2s linear;
+    word-spacing: 5px;
+}
+
+.form form .select {
+    flex-basis: calc((100% / 3) - 80px);
+}
+
+.form form input:focus,
+.form form select:focus {
+    outline: none;
+    background-color: var(--second-color);
+    border-bottom: solid 3px var(--main-color);
+}
+
+.form form .dirRight {
+    direction: ltr;
+    padding-left: 40px;
+}
+
+.form form .payment .content,
+.form form .numYears .content {
+    margin: 30px 30px 0 0;
+}
+
+.form form .payment .content label {
+    margin: 0 5px 0 30px;
+}
+
+.form form input[type="submit"] {
+    border: none;
+    flex-basis: 30%;
+    margin-top: 40px;
+    cursor: pointer;
+    background-color: var(--main-color);
+}
+
+.form form input[type="submit"]:hover {
+    background-color: #ff9d00;
+    color: #fff;
+}
+
+.form .image {
+    flex-basis: 40%;
+}
+
+.form .image img {
+    margin-top: 10px;
+    width: 100%;
+    position: sticky;
+    top: 110px;
+}
+
+/* End Req Load */
