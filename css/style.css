@@ -25,20 +25,6 @@ body {
     padding: 0px 15px;
 }
 
-/* Small */
-@media (min-width:768px) {
-    .container {
-        width: 750px;
-    }
-}
-
-/* Medium */
-@media(min-width:992px) {
-    .container {
-        width: 970px;
-    }
-}
-
 /* Large */
 @media(min-width:1200px) {
     .container {
@@ -194,13 +180,17 @@ body {
     border: none;
     outline: none;
     background-color: #eee;
-    padding: 13px 20px;
+    padding: 13px 20px 13px 45px;
     border-bottom: solid 3px #777;
     font-family: 'Cairo', sans-serif;
     margin-top: 15px;
     border-radius: 6px;
     transition: .2s linear;
     word-spacing: 5px;
+}
+
+.form form input {
+    direction: ltr;
 }
 
 .form form .select {
@@ -214,9 +204,27 @@ body {
     border-bottom: solid 3px var(--main-color);
 }
 
+.form form input:focus+span::before {
+    font-family: "Font Awesome 5 Free";
+    position: absolute;
+    font-size: 20px;
+    font-weight: bold;
+    top: 60%;
+    left: 15px;
+}
+
+.form form input:valid:focus+span::before {
+    content: '\f058';
+    color: #4caf50;
+}
+
+.form form input:invalid:focus+span::before {
+    content: '\f057';
+    color: #f43636;
+}
+
 .form form .dirRight {
-    direction: ltr;
-    padding-left: 40px;
+    direction: rtl;
 }
 
 .form form .payment .content,

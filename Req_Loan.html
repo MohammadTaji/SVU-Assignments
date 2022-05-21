@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Link For CSS File -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Link For Font Awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
     <!-- Links For Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,56 +43,66 @@
                 <h2>أدخل معلوماتك لإكمال تقديم الطلب:</h2>
                 <div class="name">
                     <label>الأسم الكامل لمقدم الطلب</label>
-                    <input type="text" name="fName" id="fName">
-                    <!-- <span></span> -->
+                    <input type="text" name="fName" id="fName" class="dirRight"
+                        pattern="[\u0621-\u064A\u0660-\u0669 ]{2,}" required>
+                    <span></span>
                 </div>
                 <div class="name">
                     <label>الرقم الوطني</label>
-                    <input type="text" name="idNum" id="idNum" class="dirRight">
-                    <!-- <span></span> -->
+                    <input type="text" name="idNum" id="idNum" pattern="(0[1-9]|1[0-4])[0-9]{9}" maxlength="11"
+                        required>
+                    <span></span>
                 </div>
                 <div class="name">
                     <label>تاريخ الولادة</label>
-                    <input type="date" name="birth" id="birth">
+                    <input type="text" name="birth" id="birth"
+                        pattern="\b([1-9]|[12][0-9]|3[01])\b-\b([1-9]|1[0-2])\b-\b(1[0-9][0-9][0-9]|20[0-9][0-9])\b"
+                        required maxlength="10">
+                    <span></span>
                 </div>
                 <div class="name">
                     <label>رقم الهاتف المحمول</label>
-                    <input type="tel" name="tele" id="tele" class="dirRight" value="+963 9" maxlength="14">
-                    <!-- <span></span> -->
+                    <input type="text" name="tele" id="tele" required maxlength="10" pattern="09([0-9]{8,8})">
+                    <span></span>
                 </div>
                 <div class="name">
                     <label>البريد الإلكتروني</label>
-                    <input type="email" name="fMail" id="fMail">
-                    <!-- <span></span> -->
+                    <input type="text" name="fMail" id="fMail" required pattern="\w{1,}@\w{1,}.(com|net|org)">
+                    <span></span>
                 </div>
                 <div class="name">
                     <label>قيمة القرض المطلوبة</label>
-                    <input type="number" name="loanValue" id="loanValue" max="10000000" min="1000000">
+                    <input type="text" name="loanValue" id="loanValue" required maxlength="8"
+                        pattern="([1-9][0-9]{6})|10000000" placeholder="مليون حتى 10 مليون">
+                    <span></span>
                 </div>
                 <div class="loanType select">
                     <label>نوع القرض المطلوب</label>
-                    <select name="" id="">
-                        <option value="">القرض التعليمي</option>
-                        <option value="">القرض السكني</option>
-                        <option value="">القرض التجاري</option>
-                        <option value="">القرض الزراعي</option>
-                        <option value="">قرض النقل</option>
-                        <option value="">قرض الورشات</option>
+                    <select name="loanType" id="loanType" required>
+                        <option>ادخل نوع القرض</option>
+                        <option value="eduLoan">القرض التعليمي</option>
+                        <option value="homeLoan">القرض السكني</option>
+                        <option value="comLoan">القرض التجاري</option>
+                        <option value="agrLoan">القرض الزراعي</option>
+                        <option value="transLoan">قرض النقل</option>
+                        <option value="workLoan">قرض الورشات</option>
                     </select>
                 </div>
                 <div class="numYears select">
                     <label>عدد سنوات القرض</label>
-                    <select name="numYears" id="numYears">
-                        <option value="fy3">3 سنوات</option>
-                        <option value="fy5">5 سنوات</option>
-                        <option value="fy10">10 سنوات</option>
-                        <option value="fy15">15 سنوات</option>
-                        <option value="fy20">20 سنوات</option>
+                    <select name="numYears" id="numYears" required>
+                        <option>ادخل عدد سنوات القرض</option>
+                        <option value="3">3 سنوات</option>
+                        <option value="5">5 سنوات</option>
+                        <option value="10">10 سنوات</option>
+                        <option value="15">15 سنوات</option>
+                        <option value="20">20 سنوات</option>
                     </select>
                 </div>
                 <div class="payment select">
                     <label>طريقة تسديد الدفعات</label>
-                    <select name="payment" id="payment">
+                    <select name="payment" id="payment" required>
+                        <option>ادخل طريقة تسديد الدفعات</option>
                         <option value="month">شهرية</option>
                         <option value="quarter">ربعية</option>
                         <option value="annual">سنوية</option>
