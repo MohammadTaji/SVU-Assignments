@@ -20,7 +20,7 @@
     <title>Result</title>
 </head>
 
-<body>
+<body onload="load()">
     <div class="header">
         <div class="container">
             <nav>
@@ -37,8 +37,64 @@
             </nav>
         </div>
     </div>
+
+    <div class="info">
+        <div class="container">
+            <form action="">
+                <div class="content">
+                    <h2>معلومات مقدم الطلب:</h2>
+                    <div class="user-info">
+                        <label>الاسم الكامل</label>
+                        <input type="text" name="" id="resName" disabled>
+                    </div>
+                    <div class="user-info">
+                        <label>الرقم الوطني</label>
+                        <input type="text" name="" id="resIdNum" disabled>
+                    </div>
+                    <div class="user-info">
+                        <label>تاريخ الولادة</label>
+                        <input type="text" name="" id="resBirth" disabled>
+                    </div>
+                    <div class="user-info">
+                        <label>رقم الموبايل</label>
+                        <input type="text" name="" id="resTele" disabled>
+                    </div>
+                    <div class="user-info">
+                        <label>E-mail</label>
+                        <input type="text" name="" id="resMail" disabled>
+                    </div>
+                </div>
+                <div class="content">
+                    <h2>معلومات القرض:</h2>
+                    <div class="user-info">
+                        <label>قيمة القرض المطلوب</label>
+                        <input type="text" name="" id="resLoanValue" disabled>
+                    </div>
+                    <div class="user-info">
+                        <label>نوع القرض</label>
+                        <input type="text" name="" id="resLoanType" disabled>
+                    </div>
+                    <div class="user-info">
+                        <label>الفائدة السنوية</label>
+                        <input type="text" name="" id="profit" disabled>
+                    </div>
+                    <div class="user-info">
+                        <label>عدد السنوات</label>
+                        <input type="text" name="" id="resNumYears" disabled>
+                    </div>
+                    <div class="user-info">
+                        <label>قيمة الدفعة</label>
+                        <input type="text" name="" id="resPayment" disabled>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
     <!-- Link For Javascript File -->
     <script src="myFunctions.js"></script>
+    <script>
+
+    </script>
 </body>
 
 </html>

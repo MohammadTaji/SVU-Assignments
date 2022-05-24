@@ -361,3 +361,38 @@ body {
 
 
 /* End Products */
+
+/* Start Result */
+.info form {
+    display: flex;
+    padding-top: 80px;
+    justify-content: space-evenly;
+}
+
+.info .content {
+    width: 35%;
+}
+
+.info .content h2 {
+    color: var(--main-color);
+    margin-bottom: 40px;
+}
+
+.info .content .user-info {
+    margin: 25px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info .content .user-info label {
+    font-weight: 700;
+}
+
+.info .content .user-info input {
+    font-size: 18px;
+    font-family: 'Cairo', sans-serif;
+    color: #000;
+}
+
+
+/* End Result */
