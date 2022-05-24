@@ -396,3 +396,23 @@ body {
 
 
 /* End Result */
+
+/* Start About */
+.about-content {
+    padding: 50px 0;
+}
+
+.about-content .text {
+    margin: 50px 0;
+
+}
+
+.about-content .text h3 {
+    margin: 30px 0;
+}
+
+.about-content .text p {
+    margin-left: 50px;
+}
+
+/* End About */
