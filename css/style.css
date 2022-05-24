@@ -193,6 +193,10 @@ body {
     direction: ltr;
 }
 
+.form form input::placeholder {
+    text-align: right;
+}
+
 .form form .select {
     flex-basis: calc((100% / 3) - 80px);
 }
@@ -294,8 +298,6 @@ body {
     color: #fff;
 }
 
-.products .pro tbody {}
-
 .products .pro tbody td {
     padding: 15px;
     font-size: 18px;
@@ -309,5 +311,53 @@ body {
     border-bottom: solid 2px var(--main-color);
     color: var(--main-color);
 }
+
+.products .modal {
+    width: 0;
+    height: 0;
+    background-color: var(--second-color);
+    border-radius: 5px;
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+.products .hide {
+    width: 550px;
+    height: fit-content;
+    border: solid 3px var(--main-color);
+    border-top: none;
+}
+
+.products .modal .icon {
+    height: 65px;
+    background-color: var(--main-color);
+}
+
+.products .modal .icon h2 {
+    padding: 10px;
+    color: #fff;
+}
+
+.products .modal i {
+    color: #f43636;
+    position: absolute;
+    font-size: 25px;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.products .modal .modalPara {
+    display: none;
+    margin: 20px 50px 30px;
+    font-size: 20px;
+}
+
 
 /* End Products */

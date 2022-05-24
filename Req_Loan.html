@@ -39,7 +39,7 @@
     </div>
     <div class="form">
         <div class="container">
-            <form action="">
+            <form action="" target="_blank" onsubmit="result()">
                 <h2>أدخل معلوماتك لإكمال تقديم الطلب:</h2>
                 <div class="name">
                     <label>الأسم الكامل لمقدم الطلب</label>
@@ -79,7 +79,7 @@
                 <div class="loanType select">
                     <label>نوع القرض المطلوب</label>
                     <select name="loanType" id="loanType" required>
-                        <option>ادخل نوع القرض</option>
+                        <option value="">ادخل نوع القرض</option>
                         <option value="eduLoan">القرض التعليمي</option>
                         <option value="homeLoan">القرض السكني</option>
                         <option value="comLoan">القرض التجاري</option>
@@ -91,7 +91,7 @@
                 <div class="numYears select">
                     <label>عدد سنوات القرض</label>
                     <select name="numYears" id="numYears" required>
-                        <option>ادخل عدد سنوات القرض</option>
+                        <option value="">ادخل عدد سنوات القرض</option>
                         <option value="3">3 سنوات</option>
                         <option value="5">5 سنوات</option>
                         <option value="10">10 سنوات</option>
@@ -102,10 +102,10 @@
                 <div class="payment select">
                     <label>طريقة تسديد الدفعات</label>
                     <select name="payment" id="payment" required>
-                        <option>ادخل طريقة تسديد الدفعات</option>
-                        <option value="month">شهرية</option>
-                        <option value="quarter">ربعية</option>
-                        <option value="annual">سنوية</option>
+                        <option value="">ادخل طريقة تسديد الدفعات</option>
+                        <option value="12">شهرية</option>
+                        <option value="4">ربعية</option>
+                        <option value="1">سنوية</option>
                     </select>
                 </div>
                 <input type="submit" value="تقديم الطلب">
