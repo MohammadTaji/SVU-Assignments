@@ -139,6 +139,33 @@ body {
 
 /* End Landing */
 
+.students {
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.students ul {
+    margin: 50px;
+    list-style: none;
+}
+
+.link {
+    text-align: center;
+    margin: 20px;
+}
+
+.link a {
+    color: var(--main-color);
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 25px;
+}
+
+.link span {
+    font-size: 25px;
+    margin-left: 20px;
+}
 
 /* Start Req Load */
 .form {
@@ -259,7 +286,7 @@ body {
 
 .form .image img {
     margin-top: 10px;
-    width: 100%;
+    width: 97%;
     position: sticky;
     top: 110px;
 }
@@ -346,6 +373,8 @@ body {
 
 .products .modal i {
     color: #f43636;
+    background-color: #fff;
+    border-radius: 50%;
     position: absolute;
     font-size: 25px;
     top: 20px;
@@ -365,8 +394,9 @@ body {
 /* Start Result */
 .info form {
     display: flex;
-    padding-top: 80px;
+    padding-top: 50px;
     justify-content: space-evenly;
+    height: calc(100vh - 120px);
 }
 
 .info .content {
@@ -416,3 +446,15 @@ body {
 }
 
 /* End About */
+
+/* Start Footer */
+footer {
+    height: 60px;
+    background-color: var(--main-color);
+    color: #fff;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+/* End Footer */
