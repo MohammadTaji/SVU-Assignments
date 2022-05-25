@@ -280,6 +280,27 @@ body {
     color: #fff;
 }
 
+.form form .wrapper .captcha-img img {
+    width: 100%;
+}
+
+.form form .wrapper .captcha-img .captcha {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    font-size: 60px;
+    letter-spacing: 5px;
+    color: #aaa;
+}
+
+.form form .wrapper .status-text {
+    font-weight: bold;
+    font-size: 20px;
+}
+
 .form .image {
     flex-basis: 40%;
 }

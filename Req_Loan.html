@@ -108,7 +108,15 @@
                         <option value="1">سنوية</option>
                     </select>
                 </div>
-                <input type="submit" value="تقديم الطلب">
+                <div class="wrapper">
+                    <div class="captcha-img">
+                        <img src="imgs/captcha-bg.png" alt="Captch Background">
+                        <span class="captcha"></span>
+                    </div>
+                    <input type="text" placeholder="Enter captcha" maxlength="6" spellcheck="false">
+                    <div class="status-text"></div>
+                </div>
+                <input type="submit" value="تقديم الطلب" class="check-btn">
             </form>
             <div class="image">
                 <img src="imgs/applay.svg" alt="">
