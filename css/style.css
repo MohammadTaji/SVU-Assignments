@@ -520,7 +520,9 @@ body {
 
 .products .hide {
     width: 550px;
+    max-width: 80%;
     height: fit-content;
+    max-height: 80vh;
     border: solid 3px var(--main-color);
     border-top: none;
 }
@@ -553,9 +555,13 @@ body {
 }
 
 @media (max-width:767px) {
-    /* .products .pro {
-        width: 95%;
-    } */
+    .products .pro thead th {
+        font-size: 13px;
+    }
+
+    .products .pro tbody td {
+        font-size: 12px;
+    }
 
     .products .hide {
         width: 450px;
@@ -574,7 +580,7 @@ body {
 
 .info .content {
     width: 100%;
-    padding: 0 40px;
+    padding: 0 20px;
 }
 
 .info .content h2 {
@@ -611,8 +617,14 @@ body {
 }
 
 @media(max-width:767px) {
+    .info .content .user-info {
+        flex-direction: column;
+        gap: 15px;
+    }
+
     .info .content .user-info input {
-        width: 50%;
+        width: fit-content;
+        align-self: flex-end;
     }
 }
 
@@ -640,13 +652,19 @@ body {
 
 /* Start Footer */
 footer {
-    height: 60px;
+    height: 50px;
     background-color: var(--main-color);
     color: #fff;
-    font-size: 20px;
+    font-size: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media(max-width:767px) {
+    footer {
+        height: 40px;
+    }
 }
 
 /* End Footer */
