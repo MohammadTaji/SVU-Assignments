@@ -1,3 +1,13 @@
+let links = document.getElementById(`links`);
+let bars = document.getElementById(`bars`);
+
+bars.addEventListener('click', (e) => {
+    links.classList.toggle(`show`);
+});
+
+
+
+
 // start modal code
 
 let eveTable = document.querySelectorAll(`.eve`);
