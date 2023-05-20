@@ -17,6 +17,7 @@ let modalPara = document.querySelectorAll(`.products .modalPara `);
 
 eveTable.forEach((ele, i) => {
     ele.addEventListener(`click`, () => {
+        modalClose();
         modal.classList.add(`hide`);
         modalPara[i].style.display = "block";
         header.textContent = document.querySelectorAll(`.eve td:first-child`)[i].textContent;
